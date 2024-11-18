@@ -33,6 +33,10 @@ const Login = () => {
         navigate("/dashboard");
     };
 
+    const handleSignUp = () => {
+        navigate("/register")
+    }
+
     return (
         <main className="main__login__container">
             <header className="heading__container">
@@ -66,7 +70,7 @@ const Login = () => {
                 <div className="register__button__container">
                     <p className="register">
                         New to Hackathon? 
-                        <a href="/register" className="register__link"> Sign Up</a>
+                        <button onClick={handleSignUp} className="register__link"> Sign Up</button>
                     </p>
                 </div>
             </section>

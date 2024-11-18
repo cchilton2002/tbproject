@@ -30,6 +30,10 @@ const Register = () => {
         document.getElementById("profilePicInput").click();
     };
 
+    const handleLogIn = () => {
+        navigate("/")
+    }
+
     // Handle registration submission
     const handleRegister = async(event) => {    
         const errors = [];  
@@ -110,7 +114,7 @@ const Register = () => {
                 <div className="already__registered__container">
                     <p className="register">
                         Already registered? 
-                        <a href="/" className="register__link"> Log In</a>
+                        <button onClick={handleLogIn} className="register__link"> Log In</button>
                     </p>
                 </div>
             </section>
