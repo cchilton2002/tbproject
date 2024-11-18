@@ -84,7 +84,21 @@
 }
 
 .register__link {
-    text-decoration: none;
-    color: yellow;
+    background: none;      
+    border: none;         
+    color: yellow;     
+    padding: 0;              
+    font-size: 1.2rem;        
+    cursor: pointer;         
+    text-decoration: none;   
+    font-weight: 500;        
+    outline: none;           
+    transition: color 0.2s;  
+    margin-left: 2px;
+}
+  
+.register__link:hover,
+.register__link:focus {
+    text-decoration: underline; 
 }
 
