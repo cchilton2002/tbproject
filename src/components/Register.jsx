@@ -38,14 +38,7 @@ const Register = () => {
     const handleRegister = async(event) => {    
         const errors = [];  
 
-        const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-        if (!emailRegex.test(email)) {
-            errors.push("Please enter a valid email address.");
-        }
 
-        if (username.trim().length < 3) {
-            errors.push("Username must be at least 3 characters long.");
-        }  
 
         if (!profilePhoto) {
           errors.push("Please upload a profile picture.");
