@@ -33,15 +33,13 @@ const Sports = () => {
       return;
     }
   
-    // Convert the search term to lowercase
+    
     const lowerCaseSearchTerm = searchTerm.toLowerCase();
   
-    // Create a lowercased version of the teamWins dictionary
     const teamWinsLowercase = Object.fromEntries(
       Object.entries(teamWins).map(([key, value]) => [key.toLowerCase(), value])
     );
   
-    // Check for wins in the lowercased dictionary
     const wins = teamWinsLowercase[lowerCaseSearchTerm];
   
     if (!wins || wins.length === 0) {

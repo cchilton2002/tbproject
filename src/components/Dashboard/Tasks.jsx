@@ -20,7 +20,6 @@ const Tasks = () => {
       }
   };
   
-  // Function to handle marking a task as completed
   const handleTaskComplete = (taskIndex) => {
       const updatedTasks = tasks.filter((_, index) => index !== taskIndex);
       setTasks(updatedTasks);

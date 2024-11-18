@@ -9,10 +9,12 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
+
+    // This allows us to store the name when logging in and check that 
+    // there is both a username and password.
     const handleLogin = () => {
         const errors = [];
-
-        // Check if username or password fields are empty
+        
         if (username.trim().length < 3) {
             errors.push("Username must be at least 3 characters long.");
         }
@@ -26,10 +28,8 @@ const Login = () => {
             return;
         }
 
-        // Save the username in localStorage
         localStorage.setItem("username", username);
 
-        // Navigate to the dashboard
         navigate("/dashboard");
     };
 

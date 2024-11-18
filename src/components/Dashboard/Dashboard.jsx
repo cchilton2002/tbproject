@@ -1,9 +1,6 @@
-import { FiPlus,FiRefreshCcw } from "react-icons/fi";
 import React from "react";
-import { useState, useEffect } from "react";
 import './Dashboard.css';
 import container from '../../assets/Container.png';
-import photo from '../../assets/Add_picture.png';
 import clothes_pie from '../../assets/clothes_pie.png';
 import { Link } from "react-router-dom";
 import NewsComponent from "./NewsComponent";

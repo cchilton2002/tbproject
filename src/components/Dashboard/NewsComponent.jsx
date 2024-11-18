@@ -7,17 +7,14 @@ import './Dashboard.css';
 const NewsComponent = ({ feedType }) => {
   const [feedData, setFeedData] = useState(null);
 
-  // Function to fetch and parse RSS data
   const fetchFeedData = async (url) => {
     try {
       const response = await fetch(`https://cors-anywhere.herokuapp.com/${url}`);
       const xmlData = await response.text();
 
-      // Parse the XML text
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(xmlData, "application/xml");
 
-      // Get the first item in the feed
       const item = xmlDoc.querySelector("item");
       if (item) {
         const title = item.querySelector("title")?.textContent;
@@ -31,7 +28,6 @@ const NewsComponent = ({ feedType }) => {
     }
   };
 
-  // Decide the URL based on feed type
   useEffect(() => {
     const getFeedUrl = () => {
       if (feedType === "news") {

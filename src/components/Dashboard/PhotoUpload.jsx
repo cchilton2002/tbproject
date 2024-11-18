@@ -18,12 +18,10 @@ const PhotoUpload = () => {
         setPhotos((prevPhotos) => [...prevPhotos, ...newPhotos]);
     };
     
-    // Trigger file input when the FiPlus icon is clicked
     const triggerFileInput = () => {
         document.getElementById("file__input").click();
     };
     
-    // Remove a selected photo preview
     const handleRemovePhoto = (index) => {
         setPhotos((prevPhotos) => prevPhotos.filter((_, i) => i !== index));
     };
@@ -33,11 +31,9 @@ const PhotoUpload = () => {
             <div className="info__text">
                 <Link to="/news">Photos</Link>
             </div>
-            {/* Use FiPlus as a button to trigger file input */}
             <FiPlus size={40} onClick={triggerFileInput} className="add__photo__icon" />
             <img src={container} className="info__image" alt="Container" />
             <div className="photos__container">
-                {/* Display selected photos or placeholders */}
                 {Array.from({ length: 4 }).map((_, index) => (
                 <div key={index} className="photo__wrapper">
                     {photos[index] ? (
@@ -48,7 +44,6 @@ const PhotoUpload = () => {
                 </div>
                 ))}
             </div>
-            {/* Hidden input for adding photos */}
             <input
                 id="file__input"
                 type="file"

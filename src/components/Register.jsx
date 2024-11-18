@@ -13,16 +13,15 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordRetype, setPasswordRetype] = useState("");
-    const [profilePhoto, setProfilePhoto] = useState(null); // Holds the URL of the uploaded image
-    const [previewPhoto, setPreviewPhoto] = useState(add_picture); // Holds the preview image URL
+    const [profilePhoto, setProfilePhoto] = useState(null); 
+    const [previewPhoto, setPreviewPhoto] = useState(add_picture); 
 
-    // Handle the file input change and update the state
     const handlePhotoChange = (event) => {
-    const file = event.target.files[0];
+        const file = event.target.files[0];
         if (file) {
             const photoURL = URL.createObjectURL(file);
-            setProfilePhoto(file); // Store the file object for form submission
-            setPreviewPhoto(photoURL); // Update preview with the selected image
+            setProfilePhoto(file); 
+            setPreviewPhoto(photoURL); 
         }
     };
 
@@ -95,7 +94,6 @@ const Register = () => {
                     <div className="profile__picture__text" onClick={triggerFileInput}>
                         {profilePhoto ? "Change Photo" : "Add Photo"}
                     </div>
-                    {/* Hidden input for file selection */}
                     <input
                     type="file"
                     id="profilePicInput"

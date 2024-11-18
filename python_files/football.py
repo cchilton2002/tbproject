@@ -2,6 +2,9 @@ import pandas as pd
 import json
 from collections import defaultdict
 
+
+# Create a function to generate a dictionary of teams and the teams they have beaten
+# Output this as a JSON file which we can read in the frontend
 def process_data():
     file_path = "I1.csv"
     df = pd.read_csv(file_path)
@@ -18,7 +21,6 @@ def process_data():
         elif result == "A":  # Away win
             team_wins[away_team].append(home_team)
 
-    # Save the dictionary as a JSON file
     with open("../../public/team_wins.json", "w") as json_file:
         json.dump(team_wins, json_file)
 

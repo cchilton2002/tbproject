@@ -1,4 +1,3 @@
-import { FiPlus,FiRefreshCcw } from "react-icons/fi";
 import React from "react";
 import { useState, useEffect } from "react";
 import './News.css'
@@ -68,7 +67,6 @@ const News = () => {
                     Read more
                 </a>
             </div>
-            {/* Navigation Arrows */}
             <div className="navigation-arrows">
                 <button onClick={goToPrevious}>&lt; Previous</button>
                 <span>

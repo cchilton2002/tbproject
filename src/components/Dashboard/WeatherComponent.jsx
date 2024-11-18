@@ -9,7 +9,6 @@ const WeatherComponent = () => {
 
   const apiKey = "380789c61f2f2e9627843953020d108f";
 
-  // Function to fetch weather data
   const fetchWeather = async (latitude, longitude) => {
     try {
       const response = await fetch(
@@ -30,7 +29,6 @@ const WeatherComponent = () => {
     }
   };
 
-  // Function to get user's location
   const getUserLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -49,12 +47,10 @@ const WeatherComponent = () => {
     }
   };
 
-  // Get the location when the component mounts
   useEffect(() => {
     getUserLocation();
   }, []);
 
-  // Render the component
   return (
     <div className="weather__overlay">
       {loading && <p className="weather__error">Loading weather data...</p>}
