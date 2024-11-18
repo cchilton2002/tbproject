@@ -39,7 +39,6 @@ const Register = () => {
         const errors = [];  
 
 
-
         if (!profilePhoto) {
           errors.push("Please upload a profile picture.");
         }
