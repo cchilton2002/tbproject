@@ -21,7 +21,7 @@ def process_data():
         elif result == "A":  # Away win
             team_wins[away_team].append(home_team)
 
-    with open("../../public/team_wins.json", "w") as json_file:
+    with open("../../public/data/team_wins.json", "w") as json_file:
         json.dump(team_wins, json_file)
 
 # Call the function to generate the JSON file

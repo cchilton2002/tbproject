@@ -11,7 +11,7 @@ const Sports = () => {
   useEffect(() => {
     const fetchTeamWins = async () => {
       try {
-        const response = await fetch("/team_wins.json");
+        const response = await fetch("/data/team_wins.json");
         const data = await response.json();
 
         setTeamWins(data);
