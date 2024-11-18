@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tbproject/static/css/main.3fee9aed.css",
-    "main.js": "/tbproject/static/js/main.337bb81c.js",
+    "main.js": "/tbproject/static/js/main.ccadb23c.js",
     "static/media/Background.png": "/tbproject/static/media/Background.577d6f310db321937481.png",
     "static/media/clothes_pie.png": "/tbproject/static/media/clothes_pie.4b86d65d5df1ffe03725.png",
     "index.html": "/tbproject/index.html",
     "main.3fee9aed.css.map": "/tbproject/static/css/main.3fee9aed.css.map",
-    "main.337bb81c.js.map": "/tbproject/static/js/main.337bb81c.js.map"
+    "main.ccadb23c.js.map": "/tbproject/static/js/main.ccadb23c.js.map"
   },
   "entrypoints": [
     "static/css/main.3fee9aed.css",
-    "static/js/main.337bb81c.js"
+    "static/js/main.ccadb23c.js"
   ]
 }
