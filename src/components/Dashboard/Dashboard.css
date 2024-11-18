@@ -1,0 +1,193 @@
+.main__dashboard__container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+
+}
+
+.summary__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; /* Space between the grid items */
+}
+
+.info__container {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__container svg {
+    position: absolute; /* Position the icon on top of the image */
+    top: 25px; /* Adjust the top positioning */
+    right: 20px; /* Adjust the right positioning */
+    font-size: 30px; /* Adjust the size of the icon */
+    color: #007bff; /* Customize the color of the icon */
+    cursor: pointer; /* Change the cursor to pointer for interactivity */
+  }
+
+.info__text {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;    
+    position: absolute;
+    top: 30px; /* Adjust the positioning as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info__text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.weather__overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+  
+  /* Location text */
+.weather__location {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+  
+  /* Weather details (icon and temperature) */
+.weather__details {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.weather__icon {
+    height: auto;
+    width: 120px;
+}
+
+.weather__temp {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.weather__error{
+    width: 10vw;
+}
+
+.pie__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+}
+
+.clothes__pie {
+    height: auto;
+    width: 250px;
+}
+
+.news__container {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.photos__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    transform: translate(5%,-0%);
+    gap: 5px;
+    justify-items: center; /* Center images horizontally */
+    align-items: center;   /* Center images vertically */
+    position: absolute; /* Changed to relative for better control */
+    padding: 10px; 
+}
+
+.add__photo__image {
+    height: auto;
+    width: 80%;
+}
+
+.add__photo__text__container {
+    transform: translate(-0%,-85%);
+    font-weight: bold;
+}
+
+.task__list {
+    width: 90%;
+    max-height: 70%;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 27%; /* Positioning the list from the top inside the container */
+    left: 5%;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: flex-start;
+}
+.task__items {
+    max-height: 230px;
+}
+
+.task__item {
+    display: flex;
+    justify-content: space-between; /* Space out task text and tick icon */
+    align-items: center;
+    padding: 5px 0;
+    font-weight: bold;
+    color: black;
+    z-index: 100;
+}
+
+.add__task {
+    transform: translate(70%,0%);
+    color: black;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.feed__container {
+    padding: 10px;
+}
+
+.heading__container {
+    text-align: center;
+}
+
+.info {
+    font-size: 16px;
+}
+
+.cors {
+    margin-bottom: 40px;
+    color: yellow;
+    font-size: 14px;
+    cursor: pointer;
+    
+}

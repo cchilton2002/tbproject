@@ -1,0 +1,79 @@
+.main__register__container {
+    width: 65vw;
+    height: 90vh;
+    z-index: 1;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.15),rgb(255, 255, 255, 0.25));
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.register__container {
+    height: 80vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.register__details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.register__button__container {
+    display: flex;
+    margin: 20px;
+
+}
+
+.add__photo__container {
+    padding: 20px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__picture__image {
+    cursor: pointer;
+    scale: 50%;    
+}
+
+.profile__picture__text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    padding-top: 60px;
+    cursor: pointer;
+}
+
+
+.profile__picture__image {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
