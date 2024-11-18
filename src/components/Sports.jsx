@@ -11,7 +11,7 @@ const Sports = () => {
   useEffect(() => {
     const fetchTeamWins = async () => {
       try {
-        const response = await fetch("/data/team_wins.json");  
+        const response = await fetch("../assets/team_wins.json");  
         if (!response.ok) {
           throw new Error(`Failed to fetch: ${response.statusText}`);
         }
